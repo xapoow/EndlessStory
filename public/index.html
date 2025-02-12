@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Story</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function loadSentences() {
+            fetch('get_sentences.php')
+                .then(response => response.json())
+                .then(data => {
+                    const historyDiv = document.getElementById('history');
+                    historyDiv.innerHTML = data.map(s => `${s.text}`).join(' ');
+                });
+        }
+        function checkLogin() {
+            fetch('session_status.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.logged_in) {
+                        document.getElementById('logoutForm').style.display = 'flex';
+                        document.getElementById('authForms').style.display = 'none';
+                    } else {
+                        document.getElementById('logoutForm').style.display = 'none';
+                        document.getElementById('authForms').style.display = 'flex';
+                    }
+                })
+                .catch(error => console.error('Error fetching session status:', error)); // Add error handling
+        }
+        window.onload = function() {
+            loadSentences();
+            checkLogin();
+        };
+    </script>
+</head>
+
+
+
+<body>
+    <h1 class="welcome">Добро пожаловать в бесконечную историю</h1>
+    
+    <div class="authForms" id="authForms">
+        <form class="reg-log-form" action="register.php" method="POST">
+            <h2>Регистрация</h2>
+            <input class="input-text" type="text" name="username" placeholder="Имя пользователя" minlength="4" required>
+            <input class="input-text" type="password" name="password" placeholder="Пароль" minLength="4" required>
+            <button class="reg-log" type="submit">Зарегистрироваться</button>
+        </form>
+        
+        <hr class="vertical">
+
+        <form class="reg-log-form" action="login.php" method="POST">
+            <h2>Вход</h2>
+            <input class="input-text" type="text" name="username" placeholder="Имя пользователя" minLength="4" required>
+            <input class="input-text" type="password" name="password" placeholder="Пароль" minLength="4" required>
+            <button class="reg-log" type="submit">Войти</button>
+        </form>
+    </div>
+    
+    <form class="sentence" action="submit_sentences.php" method="POST">
+        <h2>Добавить предложение</h2>
+        <input type="text" class="textarea" name="sentence" placeholder="Введите предложение..." maxlength="200" minlength="50" required>
+        <button class="reg-log sentence" type="submit">Отправить</button>
+    </form>
+    
+    <form action="logout.php" method="POST" id="logoutForm" style="display: none;">
+        <button class="reg-log logout" type="submit">Выйти</button>
+    </form>
+    
+    <div class="history">
+        <h2><b>История берет начало с того что...</b></h2>
+        <p id="history">
+
+        </p>
+    </div>
+</body>
+</html>

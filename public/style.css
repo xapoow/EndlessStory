@@ -1,0 +1,144 @@
+@font-face {
+    font-family: rubik;
+    src: url(Fonts/Rubik-Light.ttf);
+}
+
+body {
+    font-family: rubik;
+    margin: 0;
+    padding: 0;
+    background-color: #a2dd9a;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 0;
+    color: #3d7535;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 56px;
+}
+.welcome {
+    width: 100vw;
+    font-size: 44px;
+    padding: 0;
+    margin: 10px;
+}
+.authForms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.input-text {
+    background: none;
+    color: #3d7535;
+    border: none;
+    border-bottom: solid 1px #3d7535; 
+    transition: ease-in-out 0.3s;  
+    padding: 10px;
+    width: 250px;
+}
+.input-text:focus, .input:hover {
+    outline: none;
+    border-bottom: solid 1px #3d7535 !important;
+}
+.input-text:placeholder-shown {
+    border-bottom: dashed 1px #3d7535;
+}
+.input-text::placeholder {
+    color: #3d7535;
+}
+.reg-log-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    gap: 20px;
+}
+.reg-log {
+    width: auto;
+    height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: none;
+    color: #3d7535;
+    border: dashed 1px #3d7535;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.reg-log:hover {
+    background-color: #3d7535;
+    color: #caf0f8;
+}
+.vertical {
+    border: none;
+    border-left: 1px solid #3d7535; /* Создаем вертикальную границу */
+    height: 300px; /* Высота полоски */
+    width: 0; /* Ширина полоски */
+    margin: 0;
+    padding: 0;
+}
+.sentence {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: auto;
+    height: 200px;
+    justify-content: center;
+}
+.textarea {
+    background: none;
+    color: #3d7535;
+    border: none;
+    border-bottom: solid 1px #3d7535; 
+    transition: ease-in-out 0.3s;  
+    padding: 10px;
+    width: 330px;
+    height: 100px;
+}
+.textarea:focus, .input:hover {
+    outline: none;
+    border-bottom: solid 1px #3d7535 !important;
+}
+.textarea:placeholder-shown {
+    border-bottom: dashed 1px #3d7535;
+}
+.textarea::placeholder {
+    color: #3d7535;
+}
+.reg-log.logout {
+    position: fixed;
+    right: 50px;
+    top: 50px;
+}
+.history {
+    width: 80vw;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: left;
+}
+.reg-log.sentence {
+    padding: 20px, 0px, 20px, 0px;
+}
+p {
+    font-size: 24px;
+}
+h2 {
+    font-size: 32px;
+}
