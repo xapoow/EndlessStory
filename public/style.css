@@ -127,18 +127,21 @@ h1 {
     right: 50px;
     top: 50px;
 }
-.history {
-    width: 80vw;
-    padding-right: 100px;
-    padding-left: 100px;
-    text-align: left;
-}
 .reg-log.sentence {
     padding: 20px, 0px, 20px, 0px;
+}
+.history {
+    max-width: 80vw;
+    text-align: left;
+    height: auto;
 }
 p {
     font-size: 24px;
 }
 h2 {
     font-size: 32px;
+}
+.history-p {
+    text-wrap: wrap;
+    height: auto;
 }
