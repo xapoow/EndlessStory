@@ -24,6 +24,23 @@ body {
 h1 {
     font-size: 56px;
 }
+a {   
+    text-decoration: none;
+    color: #3d7535;
+    transition: ease-in-out 0.3s;
+}
+a:hover {
+    color: #8a1111;
+}
+.nf {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back {
+    border: solid 1px #3d7535;  
+}
 .welcome {
     width: 100vw;
     font-size: 44px;
