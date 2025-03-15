@@ -16,7 +16,7 @@ body {
     height: 100vh;
     width: 100vw;
     text-align: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 0;
     color: #3d7535;
     overflow-x: hidden;
