@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Бесконечная история - добавляйте предложения и создавайте уникальный текст вместе с другими пользователями.">
-    <meta name="keywords" content="бесконечная история, коллективное письмо, текст, творчество">
     <meta name="author" content="Endless Story Project">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#a2dd9a">
     <meta property="og:title" content="Бесконечная история">
     <meta property="og:description" content="Добавляйте предложения и создавайте уникальный текст вместе!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://endlessstory.42web.io">
     <meta property="og:image" content="https://endlessstory.42web.io/favicon/favicon.svg">
     <link rel="canonical" href="https://endlessstory.42web.io">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Endless Story" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Endless Story">
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <title>Endless Story</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
-<!-- update 2 -->
-
 <body>
     <h1 class="welcome">Добро пожаловать в бесконечную историю</h1>
 
-    <p>
-        Endless Story это сайт на котором вы можете добавить свое предложение к уже 
-        существующей истории. <br> Предложение должно быть <b>не менее 50 символов и не более 
-        200 символов</b>. <br>После добавления вашего предложения, <b>оно будет отображено на этой 
-        странице</b>.
-    </p>
-    <p style="color: red;">
-        Предложение должно быть <b>логичным</b> и продолжать предыдущее предложение. <br>
-        В конце предложения должна стоять <b>точка</b>.
-    </p>
+    <div class="description">
+        <p>
+            Endless Story это сайт на котором вы можете добавить свое предложение к уже 
+            существующей истории. <br> Предложение должно быть <b>не менее 50 символов и не более 
+            200 символов</b>. <br>После добавления вашего предложения, <b>оно будет отображено на этой 
+            странице</b>.
+        </p>
+        <p style="color: red;">
+            Предложение должно быть <b>логичным</b> и продолжать предыдущее предложение. <br>
+            В конце предложения должна стоять <b>точка</b>.
+        </p>
+    </div>
     
     <div class="authForms" id="authForms">
         <form class="reg-log-form" action="register.php" method="POST">
@@ -70,7 +70,7 @@
     
     <div class="history">
         <h2><b>История берет начало с того что...</b></h2>
-        <p id="history">
+        <p class="history-p" id="history">
 
         </p>
     </div>

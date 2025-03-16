@@ -8,16 +8,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #a2dd9a;
-    display: grid;
-    grid-template-columns: 1fr;
-    /* flex-direction: column; */
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     text-align: center;
-    /* flex-wrap: wrap; */
-    gap: 0;
+    flex-wrap: wrap;
+    gap: 0px;
     color: #3d7535;
     overflow-x: hidden;
 }
@@ -148,8 +147,12 @@ a:hover {
     padding: 20px, 0px, 20px, 0px;
 }
 .history {
-    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: left;
+    align-items: left;
+    width: 90%;
     height: auto;
 }
 p {
