@@ -23,7 +23,7 @@ if (!isset($_SESSION['user_id'])) {
 $user_id = $_SESSION['user_id'];
 $sentence = trim($_POST['sentence'] ?? '');
 
-$max_length = 200; // Максимальное количество символов в предложении
+$max_length = 200;
 if (empty($sentence)) {
     die("Ошибка: предложение не может быть пустым.");
 }
