@@ -103,9 +103,9 @@ a:hover {
 }
 .vertical {
     border: none;
-    border-left: 1px solid #3d7535; /* Создаем вертикальную границу */
-    height: 300px; /* Высота полоски */
-    width: 0; /* Ширина полоски */
+    border-left: 1px solid #3d7535;
+    height: 300px;
+    width: 0;
     margin: 0;
     padding: 0;
 }
