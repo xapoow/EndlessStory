@@ -47,6 +47,7 @@ Users must **register and log in** before submitting content.
 **Hosting:**
 
 - Currently deployed on [42web](https://42web.io)
+- [Deploy](https://endlessstory.42web.io/)
 
 ---
 
