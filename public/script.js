@@ -18,7 +18,7 @@ function checkLogin() {
                 document.getElementById('authForms').style.display = 'flex';
             }
         })
-        .catch(error => console.error('Error fetching session status:', error)); // Add error handling
+        .catch(error => console.error('Error fetching session status:', error)); 
 }
 window.onload = function() {
     loadSentences();
