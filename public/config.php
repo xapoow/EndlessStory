@@ -5,8 +5,8 @@ if (session_status() == PHP_SESSION_NONE) {
 
 $host = 'localhost';
 $dbname = 'endless_story';
-$username = 'xapow';
-$password = 'xapow';
+$username = '...';
+$password = '...';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
